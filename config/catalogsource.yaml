@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: rhods-catalog-dev
+  namespace: redhat-ods-operator
+spec:
+  displayName: Red Hat OpenShift Data Science
+  publisher: RHODS Development Catalog
+  image: brew.registry.redhat.io/rh-osbs/iib:541873
+  sourceType: grpc
