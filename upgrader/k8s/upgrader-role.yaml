@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: redhat-ods-operator
+  name: upgrader-role
+rules:
+- apiGroups: ["operators.coreos.com"]
+  resources: ["catalogsources"]
+  verbs: ["get", "create", "update", "list", "patch", "watch"]

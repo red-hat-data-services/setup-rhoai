@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: upgrader-cron
+  namespace: redhat-ods-operator
+spec:
+  schedule: "26 10 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: upgrader
+            image: quay.io/modh/nightlies-upgrader:latest
+            imagePullPolicy: IfNotPresent
+            securityContext:
+              privileged: false
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop: ["ALL"]
+              runAsNonRoot: true
+#              runAsUser: 1001317986
+#              fsGroup: 1001317986
+              seccompProfile:
+                type: RuntimeDefault
+          restartPolicy: OnFailure
+          serviceAccountName: upgrader-sa
