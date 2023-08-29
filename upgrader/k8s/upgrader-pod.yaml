@@ -7,14 +7,12 @@ spec:
   containers:
   - image: quay.io/modh/nightlies-upgrader:latest
     name: upgrader
-#    command: ["sleep", "1h"]
     securityContext:
       privileged: false
       allowPrivilegeEscalation: false
       capabilities:
         drop: ["ALL"]
       runAsNonRoot: true
-#      runAsUser: 0
       seccompProfile:
         type: RuntimeDefault
   serviceAccountName: upgrader-sa
