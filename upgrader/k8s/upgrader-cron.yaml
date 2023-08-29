@@ -4,7 +4,7 @@ metadata:
   name: upgrader-cron
   namespace: redhat-ods-operator
 spec:
-  schedule: "26 10 * * *"
+  schedule: "35 12 * * *"
   jobTemplate:
     spec:
       template:
@@ -12,7 +12,7 @@ spec:
           containers:
           - name: upgrader
             image: quay.io/modh/nightlies-upgrader:latest
-            imagePullPolicy: IfNotPresent
+            imagePullPolicy: Always
             securityContext:
               privileged: false
               allowPrivilegeEscalation: false
