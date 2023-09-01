@@ -5,7 +5,7 @@
 4. RHODS team only needs to update the S3 object with latest image, rest all the upgrade will happen automatically
 5. It's a scalable approach, it can be used to keep any number of clusters updated to the latest nightly
 6. Avoids unnecessary efforts to manually update the cluster with latest nightly
-7. 
+
 # Setup Nightlies Upgrader
 * Make sure you have openshift CLI
 * Login to the cluster from CLI with admin credentials
