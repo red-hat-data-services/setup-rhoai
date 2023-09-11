@@ -7,3 +7,4 @@ oc delete operatorgroup $(oc get operatorgroup -n redhat-ods-operator --no-heade
 oc delete ns -l opendatahub.io/generated-namespace
 oc delete namespace redhat-ods-operator
 oc new-project redhat-ods-operator
+#oc delete crd dscinitializations.dscinitialization.opendatahub.io  datascienceclusters.datasciencecluster.opendatahub.io  odhapplications.dashboard.opendatahub.io  odhdocuments.dashboard.opendatahub.io  odhdashboardconfigs.opendatahub.io
