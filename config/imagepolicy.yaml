@@ -11,6 +11,6 @@ spec:
     - source: registry.stage.redhat.io
       mirrors:
         - brew.registry.redhat.io
-    - source: registry.redhat.io/rhods
+    - source: registry.redhat.io/rhoai
       mirrors:
-        - brew.registry.redhat.io/rhods
+        - brew.registry.redhat.io/rhoai

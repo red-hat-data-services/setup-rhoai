@@ -45,7 +45,7 @@ oc delete kfdef --all -n ${RHODS_APPS_NAMESPACE} --ignore-not-found || true
 oc delete -f ${INSTALLATION_TYPE} --ignore-not-found
 # Delete the RHODS operator catalog source
 if [ ${INSTALLATION_TYPE} != "addon" ]; then
-    oc delete -f ${INSTALLATION_TYPE}-catalogsource.yaml -n ${OPENSHIFT_MARKETPLACE_NAMESPACE} --ignore-not-found
+    oc delete -f config/catalogsource.yaml -n ${OPENSHIFT_MARKETPLACE_NAMESPACE} --ignore-not-found
 fi
 
 # cleanup of v2 resources

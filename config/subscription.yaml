@@ -1,0 +1,10 @@
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: rhoai-operator-dev
+spec:
+  name: rhods-operator
+  channel: stable
+  source: rhoai-catalog-dev
+  sourceNamespace: openshift-marketplace
