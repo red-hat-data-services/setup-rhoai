@@ -6,5 +6,5 @@ metadata:
 spec:
   displayName: Red Hat OpenShift AI
   publisher: RHOAI Development Catalog
-  image: brew.registry.redhat.io/rh-osbs/iib:717354
+  image: quay.io/rhoai/rhoai-fbc-fragment:rhoai-2.16@sha256:bc9b09e5a70c03d92c7234fe207f957d09392a0c915e5ec5bb9b41f08505ff97
   sourceType: grpc
