@@ -1,4 +1,4 @@
-# Install OpenShift AI dev build using a brew index image
+# Install OpenShift AI dev build using a quay FBC image
 * Make sure you have the "oc" cli installed
 * Make sure you are logged in to the cluster from the cli as an admin
 * Uninstall Openshift AI completely if it is installed
